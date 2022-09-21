@@ -13,17 +13,38 @@ header {
     font-size: 25px;
     color: #30343f; }
   header nav .letra {
+    font-size: 15px;
     font-family: "Oxygen";
+    border-right: 1px solid;
     color: #f71735; }
     header nav .letra:hover {
-      color: #f71735; }
+      color: #30343f; }
 
 main {
-  margin: 50px;
-  padding: 30px;
-  background: #9aaacb;
-  background: linear-gradient(90deg, #9aaacb 0%, #ffb7c0 50%, #9aaacb 100%); }
+  padding: 10px;
+  display: flex;
+  justify-items: center;
+  background-color: #A7ACCA; }
+  main .alinear {
+    width: 700px;
+    height: auto; }
+  main .posicion {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative; }
+  main .posletra {
+    border-radius: 30px;
+    font-size: 18px;
+    background-color: #30343f2b;
+    padding: 20px;
+    position: absolute; }
+  main .imagen_portada {
+    width: 100%;
+    display: flex; }
   main .card {
+    background-color: rgba(255, 255, 255, 0.167);
     display: flex;
     width: 200px;
     border-radius: 8px;
@@ -34,7 +55,7 @@ main {
     align-items: center;
     margin: 10px;
     transition: all 1s ease; }
-    main .card .card img {
+    main .card .img2 {
       display: flex;
       width: 100px;
       height: auto;

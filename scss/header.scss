@@ -16,11 +16,12 @@ header{
 
    nav{
       .letra{
+      font-size: 15px;
       font-family: $letra_principal;
+      border-right: 1px solid;
       color:map-get($color, color-base2);
       &:hover{
-         color: map-get($color, color-base2);
-      }
+      color: map-get($color, color-base1);}
    }
 
    }
