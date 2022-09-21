@@ -1,13 +1,46 @@
 
 main{
-    margin: 50px;
-    padding: 30px;
+    
+    padding: 10px;
+    display: flex;
+    justify-items:center;
+    background-color: #A7ACCA;
 
-    background: rgb(154,170,203);
-    background: linear-gradient(90deg, rgba(154,170,203,1) 0%, rgba(255,183,192,1) 50%, rgba(154,170,203,1) 100%);
-   
+
+    .alinear{
+        width: 700px;
+        height: auto;
+    }
+
+    .posicion{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        overflow:hidden;
+        position: relative;
+    }
+
+    .posletra{
+        border-radius: 30px;
+        font-size:map-get($tamlet, medio);
+        background-color: #30343f2b;
+        padding: 20px;
+        position: absolute;
+        
+      
+    }
+
+    
+    .imagen_portada{
+            width: 100%;
+            display: flex;
+        
+        }
+
+
    
     .card{
+        background-color:rgba(255, 255, 255, 0.167);
         display: flex;
         width: 200px;
         border-radius: 8px;
@@ -19,7 +52,7 @@ main{
         margin: 10px;
         transition: all 1s ease;
         
-        .card img{
+        .img2 {
            display: flex;
            width:100px;
            height:auto;
