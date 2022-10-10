@@ -1,0 +1,37 @@
+footer{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+   
+
+    ul{ 
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-family: $letra_principal;
+    
+    }
+
+    .subtitulo-estilo{
+        font-family:$letra_principal;
+        
+        font-size: map-get($color, color-base1);
+        font-size: map-get($tamlet, medio);
+    }
+
+    .logo-red{
+        width: 60px;
+        height: auto;  
+    }
+
+    .ubicacion{
+            width: 200px;
+            height: auto;
+        }
+        
+}
+
+

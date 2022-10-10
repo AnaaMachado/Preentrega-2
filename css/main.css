@@ -1,5 +1,4 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2? family= Comfortaa:wght@300;400;500;600;700 & family= Mulish:wght@200 & familia= Oxígeno:peso@300;400;700 & mostrar=cambiar");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Mulish:wght@200&family=Oxygen:wght@300;400;700&display=swap");
 header {
   padding: 10px;
   background: rgba(255, 255, 255, 0.25);
@@ -10,73 +9,70 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.18); }
   header .titulo {
     font-family: "Oxygen";
-    font-size: 25px;
+    font-size: 30px;
     color: #30343f; }
   header nav .letra {
-    font-size: 15px;
+    font-size: 20px;
     font-family: "Oxygen";
     border-right: 1px solid;
     color: #f71735; }
     header nav .letra:hover {
       color: #30343f; }
 
+/*mediaqueries*/
+@media screen and (max-width: 768px) {
+  .titulo {
+    font-size: 20px; }
+  nav .letra {
+    font-size: 12px; } }
+
 main {
-  padding: 10px;
+  padding: 20px;
   display: flex;
   justify-items: center;
-  background-color: #A7ACCA; }
-  main .alinear {
-    width: 700px;
-    height: auto; }
-  main .posicion {
+  background-color: #ed60739e;
+  /*Estilo en las cards*/
+  /*Tipos de Letra*/ }
+  main .esilo-contenedor {
+    padding: 0px;
+    margin: 0px;
     display: flex;
-    justify-items: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative; }
-  main .posletra {
-    border-radius: 30px;
-    font-size: 18px;
-    background-color: #30343f2b;
+    justify-content: center; }
+  main .marcas {
     padding: 20px;
-    position: absolute; }
-  main .imagen_portada {
-    width: 100%;
-    display: flex; }
-  main .card {
-    background-color: rgba(255, 255, 255, 0.167);
+    margin: 10px; }
+  main .fondo-estilo {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18); }
+    main .fondo-estilo .col-3 {
+      display: flex; }
+  main .card-estilo {
+    background-color: rgba(255, 255, 255, 0.406);
     display: flex;
-    width: 200px;
-    border-radius: 8px;
-    box-shadow: 10px 8px 19px -7px rgba(0, 0, 0, 0.58);
+    box-shadow: 10px 8px 19px -7px rgba(0, 0, 0, 0.204);
     -webkit-box-shadow: 10px 8px 19px -7px rgba(0, 0, 0, 0.58);
     -moz-box-shadow: 10px 8px 19px -7px rgba(0, 0, 0, 0.58);
     flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    transition: all 1s ease; }
-    main .card .img2 {
-      display: flex;
-      width: 100px;
-      height: auto;
-      object-fit: cover;
-      margin: 10px; }
-    main .card .card a {
-      background: #ff8292;
-      color: white;
-      padding: 8px 20px;
-      border-radius: 4px;
-      margin-top: 10px; }
-    main .card .card-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-      margin: 30px;
-      padding: 0px 10px; }
-      main .card .card-container .card:hover {
+    margin: 20px;
+    padding: 10px;
+    transition: all 1s ease;
+    color: #30343f; }
+    main .card-estilo:hover {
+      transition: all 1s ease;
+      transform: scale(1.1); }
+    main .card-estilo .estilo-boton {
+      background: #ff6b7f;
+      color: #30343f;
+      border: #f71735 2px;
+      transition: all 1s ease; }
+      main .card-estilo .estilo-boton:hover {
         transition: all 1s ease;
-        transform: scale(1.2); }
+        background: #30343f;
+        color: white; }
   main .enlinea {
     margin-top: 20px;
     display: flex;
@@ -86,24 +82,96 @@ main {
     padding: 5px;
     text-decoration: none;
     color: #30343f; }
+  main .btn-primary {
+    background: #ff6b7f;
+    color: #30343f;
+    border: #f71735 2px;
+    transition: all 1s ease;
+    border: rgba(255, 255, 255, 0.57) 1px solid; }
+    main .btn-primary:hover {
+      transition: all 1s ease;
+      background: #30343f;
+      color: white; }
+  main .marcas {
+    padding: 20px;
+    margin: 10px; }
+  main .estilo-volver {
+    font-family: "Oxygen";
+    background: #fa6e83;
+    box-shadow: 8px 8px 28px -8px rgba(0, 0, 0, 0.61);
+    -webkit-box-shadow: 8px 8px 28px -8px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: 8px 8px 28px -8px rgba(0, 0, 0, 0.61);
+    color: #30343f;
+    text-transform: uppercase;
+    border: #ff0022 1px solid;
+    transition: all 1s ease; }
+    main .estilo-volver:hover {
+      transition: all 1s ease;
+      background: #30343f;
+      color: white; }
+  main .estilo-servicio {
+    display: flex;
+    justify-content: space-around; }
+  main .texto-estilo {
+    display: flex;
+    justify-content: flex-start; }
+  main .titulo-estilo {
+    font-family: "Oxygen";
+    font-size: 30px;
+    text-transform: uppercase; }
+  main .subtitulo-estilo {
+    font-family: "Oxygen";
+    font-weight: bolder;
+    font-size: #30343f;
+    font-size: 20px; }
+  main .parrafo-estilo {
+    font-family: "Oxygen";
+    font-size: 20px; }
+  main .efecto-img {
+    transition: all 1s ease; }
+    main .efecto-img:hover {
+      transition: all 1s ease;
+      filter: grayscale(1);
+      transform: scale(1.01); }
+
+/*mediaqueries*/
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap; }
+  .col-3 {
+    flex-direction: column; }
+  footer .row {
+    flex-direction: column;
+    display: flex;
+    justify-content: center; }
+  .marcas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; } }
 
 body {
   background: #9aaacb;
   background: linear-gradient(90deg, #9aaacb 0%, #ffb7c0 50%, #9aaacb 100%); }
 
 footer {
-  padding: 25px;
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18); }
-  footer .container {
-    padding: 20px;
+  footer ul {
     display: flex;
-    justify-items: center;
-    display: block; }
+    flex-direction: column;
+    list-style: none;
+    font-family: "Oxygen"; }
+  footer .subtitulo-estilo {
+    font-family: "Oxygen";
+    font-size: #30343f;
+    font-size: 20px; }
   footer .logo-red {
     width: 60px;
     height: auto; }

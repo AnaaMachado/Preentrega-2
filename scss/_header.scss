@@ -1,0 +1,43 @@
+header{
+   padding:10px;
+   background: rgba( 255, 255, 255, 0.25 );
+   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+   backdrop-filter: blur( 4px );
+   -webkit-backdrop-filter: blur( 4px );
+   border-radius: 10px;
+   border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+
+   .titulo{
+      font-family: $letra_principal;
+      font-size:map-get($tamlet, grande);
+      color: map-get($color, color-base1);
+   }
+
+   nav{
+
+      .letra{
+      font-size: map-get($tamlet, medio);
+      font-family: $letra_principal;
+      border-right: 1px solid;
+      color:map-get($color, color-base2);
+      &:hover{
+      color: map-get($color, color-base1);}
+   }
+
+   }
+  
+
+}
+/*mediaqueries*/
+@media screen and(max-width:768px){
+   .titulo{
+      font-size:map-get($tamlet, medio);
+   }
+
+   nav{
+      .letra{
+      font-size: map-get($tamlet, chico);
+   }
+    }
+}
