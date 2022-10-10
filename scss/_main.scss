@@ -1,0 +1,196 @@
+
+main{
+    padding: 20px;
+    display: flex;
+    justify-items:center;
+    background-color: map-get($color,color-fondo);
+
+    .esilo-contenedor{
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    .marcas{
+        padding: 20px;
+        margin: 10px;
+      }
+
+/*Estilo en las cards*/
+
+.fondo-estilo{
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5.5px );
+-webkit-backdrop-filter: blur( 5.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+.col-3{
+    display: flex;
+}
+
+}
+        .card-estilo{
+            background-color:rgba(255, 255, 255, 0.406);
+            display: flex;
+            box-shadow: 10px 8px 19px -7px rgba(0, 0, 0, 0.204);
+            -webkit-box-shadow: 10px 8px 19px -7px rgba(0,0,0,0.58);
+            -moz-box-shadow: 10px 8px 19px -7px rgba(0,0,0,0.58); 
+            flex-direction: column;
+            margin: 20px;
+            padding: 10px;
+            transition: all 1s ease;
+            &:hover{
+                transition: all 1s ease;
+                transform: scale(1.1);
+                }
+            color:map-get($color, color-base1);
+
+           .estilo-boton{
+            background:map-get($color, color-boton);
+            color:map-get($color, color-base1);
+            border:map-get($color, color-base2) 2px;
+            transition: all 1s ease;
+            &:hover{
+                transition: all 1s ease;
+                background:map-get($color, color-base1);
+                color: white;
+
+                } 
+            }
+      
+    }
+  
+   
+    .enlinea{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        
+    
+    }
+    
+    .listita{
+        list-style-type: none;
+        padding: 5px;
+        text-decoration: none;
+        color: map-get($color, color-base1); 
+    }
+
+    .btn-primary{
+        background:map-get($color, color-boton);
+        color:map-get($color, color-base1);
+        border:map-get($color, color-base2) 2px;
+        transition: all 1s ease;
+        border: rgba(255, 255, 255, 0.57) 1px solid;
+        &:hover{
+            transition: all 1s ease;
+            background:map-get($color, color-base1);
+            color: white;
+
+            }
+
+    }
+    
+.marcas{
+  padding: 20px;
+  margin: 10px;
+}
+
+.estilo-volver{
+    font-family:$letra_principal;
+    background: #fa6e83;
+    box-shadow: 8px 8px 28px -8px rgba(0,0,0,0.61);
+-webkit-box-shadow: 8px 8px 28px -8px rgba(0,0,0,0.61);
+-moz-box-shadow: 8px 8px 28px -8px rgba(0,0,0,0.61);
+    color:map-get($color, color-base1);
+    text-transform: uppercase;
+    border:#ff0022 1px solid;
+    transition: all 1s ease;
+    &:hover{
+        transition: all 1s ease;
+        background:map-get($color, color-base1);
+        color: white;}
+    }
+
+
+/*Tipos de Letra*/
+
+.estilo-servicio{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+    .texto-estilo{
+    display: flex;
+    justify-content: flex-start;
+    }
+
+    .titulo-estilo{
+    font-family: $letra_principal;
+    font-size: map-get($tamlet, grande);
+    text-transform: uppercase;
+   
+    }
+
+    .subtitulo-estilo{
+    font-family:$letra_principal;
+    font-weight:bolder;
+    font-size: map-get($color, color-base1);
+    font-size: map-get($tamlet, medio);
+    
+    }
+    .parrafo-estilo{
+    font-family:$letra_principal;
+    font-size:map-get($tamlet, medio);
+    
+    }
+
+    .efecto-img{
+        transition: all 1s ease;
+        &:hover{
+            transition: all 1s ease;
+            filter: grayscale(1);
+            transform: scale(1.01);
+            
+    }
+}
+
+
+}
+
+/*mediaqueries*/
+@media screen and(max-width:768px){
+   .row{
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+       
+              
+    }
+    .col-3{
+        flex-direction: column;  
+      
+    }
+
+    footer .row{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .marcas{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:center;
+
+        
+    }
+
+
+}
